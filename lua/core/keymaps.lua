@@ -30,7 +30,7 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 -- Buffers
 vim.keymap.set('n', ']b', ':bnext<CR>', opts)
 vim.keymap.set('n', '[b', ':bprevious<CR>', opts)
-vim.keymap.set('n', '<leader>c', ':Bdelete!<CR>', opts)   -- close buffer
+vim.keymap.set('n', '<leader>c', ':bdelete!<CR>', { desc="Close buffer", noremap = true, silent = true, })
 
 -- Navigate between splits
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', opts)

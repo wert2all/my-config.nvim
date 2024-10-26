@@ -14,7 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 	require 'plugins.neotree',
     require 'plugins.colortheme',	
-    require 'plugins.lualine'
+    require 'plugins.which-key',
+    require 'plugins.treesitter',
+    require 'plugins.lualine',
 })
 
 vim.cmd("colorscheme nightfox")
