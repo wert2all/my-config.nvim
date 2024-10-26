@@ -17,6 +17,7 @@ require('lazy').setup({
     require 'plugins.which-key',
     require 'plugins.treesitter',
     require 'plugins.lualine',
+    require 'plugins.telescope',
 })
 
 vim.cmd("colorscheme nightfox")
