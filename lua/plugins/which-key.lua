@@ -39,5 +39,13 @@ icons = {
         },
       },
   },
-  keys = {  },
+    config = function()
+        local wk = require("which-key")
+        wk.add({
+          { "<leader>f", group = "file"},
+          { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File", mode = "n" },
+          {"<Leader>fB", "<cmd>Telescope registers<cr>", desc = "Resisters"}  
+          -- ["<Leader>fr"] = { "<cmd>Telescope oldfiles<cr>", desc = "Recent files" },         { "<leader>g", group = "git"},
+        })
+    end
 }
